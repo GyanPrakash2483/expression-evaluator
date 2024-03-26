@@ -33,10 +33,3 @@ int main() {
 
     return 0;
 }
-
-/*
-TODO:
-
-- Add expression invalidation checks
-
-*/
