@@ -59,7 +59,7 @@ void validateInfix(expression infix) {
     if(infix.expression[0].isOperator && infix.expression[0].operator != '(' && infix.expression[0].operator != ')') {
         printf("Invalid Expression: Expected operand before and after a binary operator\n");
         exit(1);
-    } else if(infix.expression[infix.length-1].isOperator && (infix.expression[infix.length-1].operator != '(' || infix.expression[infix.length-1].operator != ')')) {
+    } else if(infix.expression[infix.length-1].isOperator && infix.expression[infix.length-1].operator != '(' && infix.expression[infix.length-1].operator != ')') {
         printf("Invalid Expression: Expected operand before and after a binary operator\n");
         exit(1);
     }
