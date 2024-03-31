@@ -185,6 +185,9 @@ int evaluatePostfix(expression postfix) {
                 result = left_operand - right_operand;
             } else if (current_token.operator == '^') {
                 result = pow(left_operand, right_operand);
+            } else {
+                printf("Invalid Operator: %c\n", current_token.operator);
+                exit(1);
             }
 
             stackIntPush(&stack, result);
